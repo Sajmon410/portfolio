@@ -29,12 +29,13 @@ text-align: center;
 
   @keyframes hinge {
     0% {
-    
+        opacity: 0;
       transform-origin: top left;
       animation-timing-function: ease-in-out;
     }
   
     20%, 60% {
+        opacity: 1;
       transform: rotate3d(0, 0, 1, 40deg);
       animation-timing-function: ease-in-out;
     }
@@ -54,7 +55,7 @@ text-align: center;
   .image1{
     width: 300px;
         height: 150px;
-        border-radius: 25px;
+        border-radius: 20px;
         margin: 40px;
         margin-top: 100px;
   }

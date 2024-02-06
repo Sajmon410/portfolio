@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './hero.css';
-import {ReactTyped,Typed} from "react-typed";
+import {ReactTyped} from "react-typed";
 import img from '../img/photo1.PNG';
 import img2 from '../img/photo2.PNG';
 const Hero = () => {

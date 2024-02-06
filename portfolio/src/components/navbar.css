@@ -1,0 +1,35 @@
+.navbar {
+    overflow: hidden;
+    background: linear-gradient(90deg, #9022c3e2, rgb(147, 39, 255));
+    border-radius: 10px;
+    margin: 40px 10%;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+
+}
+
+  .content {
+    margin: 0px 20%;
+
+    padding: 1rem;
+    height: 100%; /* Dodato da zauzme celu visinu roditeljskog elementa */
+    z-index: 1; /* Osigurava da je sadržaj iznad pruga */
+    text-decoration-style:solid;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  .menu{
+    font-size: 1rem;
+    margin: 0 15px;
+  }
+  .menu{
+    display: inline-block;
+    justify-content: space-between;/* Centriranje teksta horizontalno */
+    align-items: center;
+    padding: 1rem;
+    z-index: 1; /* Osigurava da je sadržaj iznad pruga */
+    text-decoration-style:solid;
+  }

@@ -1,0 +1,11 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(90deg, #000000, rgb(70, 1, 140));
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

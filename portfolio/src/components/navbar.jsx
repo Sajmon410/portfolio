@@ -43,7 +43,7 @@ const Navbar = () => {
           className="menu"
           animate={{ rotate:0.1 }}
         >
-               <CustomLink to="/">Concact</CustomLink>
+               <CustomLink to="/">Contact</CustomLink>
         </motion.div>
         </div>
      

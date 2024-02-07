@@ -50,21 +50,23 @@ const Hero = () => {
                 className="centar"
                 onClick={handleDivClick}
                 animate={{ rotate:0.1 }}>
+                    <div className='animate__animated animate__jackInTheBox'>
                      <div className="app-container"></div>
                 <h1 className="text-hero">Welcome.</h1>
                 <ReactTyped strings={[`My name is  <span style="color: rgb(0, 0, 0);">Simon</span> Radosavljević.`]} typeSpeed={100} loop />
+                </div>
                 </motion.div>
                 <div className="hinge" style={{ display: isClicked ? 'block' : 'none' }}> 
                 <img src={img} alt="React Logo" className="image1"/>
                 </div>
                 <div className="projects">
-                {showNewImage   && visible &&(
+                {showNewImage   && !isScrolled &&(
           <motion.div
             initial={{ opacity: 0.1 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
     
-            className={isScrolled ? "pojetct_del" : "project"}
+            className={isScrolled ? "animate__animated animate__backInUp" : "animate__animated animate__backInUp"}
           >
              <motion.div
                 whileHover={{ scale: 1 }}
@@ -75,28 +77,29 @@ const Hero = () => {
 
             <img src={img} alt="New Image" className="fullphoto1" />
             <p className="downimage">This is my forum website with login and registration.</p> 
-            <img src={arrow} onClick={handleScroll} alt="New Image" className="arrow" />
             </motion.div>
+            <img src={arrow} onClick={handleScroll} alt="New Image" className="arrow" />
+            
           </motion.div>
         )}
-        {isScrolled && (
+        {isScrolled &&(
           <motion.div
       
             className="animate__animated animate__backInUp"
-            onClick={removeElement}
+           
           >
              <motion.div
                 whileHover={{ scale: 1 }}
                 whileTap={{rotate: 10 , scale: 1.1}}
                 transition={5000}
                 animate={{ rotate:0.1 }}>
-        
-
             <img src={img2} alt="New Image" className="fullphoto1" />
             <p className="downimage">Insovlet D.O.O. site (click to view)</p> 
-            <img src={arrow} alt="New Image" className="arrow" />
             </motion.div>
-          </motion.div>
+            <img src={arrow} alt="New Image" onClick={handleScroll} className="arrow" />
+            </motion.div>
+           
+
         )}
         </div>
                 </div>

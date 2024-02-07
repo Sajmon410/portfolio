@@ -17,6 +17,9 @@
     z-index: 1; /* Osigurava da je sadržaj iznad pruga */
     text-decoration-style:solid;
   }
+li{
+    list-style: none;
+  }
   
   .logo {
     font-size: 1.1rem;

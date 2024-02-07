@@ -1,13 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar.jsx'
 import Hero from './components/hero.jsx'
-
+import AboutMe from './components/aboutme.jsx'
+import { Route, Routes } from "react-router-dom"
 function App() {
   return (
   <>
   <Navbar/>
-  <Hero/>
+  <Routes>
+    <Route path="/" element={<Hero />} />
+    <Route path="/aboutme" element={<AboutMe />} />
+    <Route path="/aboutme" element={<AboutMe />} />
+  </Routes>
   </>
   );
 }

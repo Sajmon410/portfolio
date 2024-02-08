@@ -18,10 +18,36 @@ const AboutMe = () => {
                     <ReactTyped strings={[`My name is  <span style="color: rgb(0, 0, 0);">Simon</span> Radosavljević.`]} typeSpeed={100} loop />
                 </div>
         </motion.div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae nibh convallis, mattis erat ut, placerat odio. Morbi non enim vel sapien cursus tempor. Donec id urna est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis et fermentum orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur rhoncus rutrum augue, non bibendum purus fermentum eget. Cras elementum dolor purus, in cursus est egestas facilisis. Vestibulum diam nisl, sodales ac dolor a, pharetra porttitor orci. Donec non feugiat tortor, id tristique erat. Praesent sapien purus, hendrerit ac dignissim pharetra, vehicula id orci.
-
-                Vivamus placerat dolor at auctor rutrum. Mauris euismod nibh in urna lacinia, eget sollicitudin justo auctor. Maecenas porttitor sapien eu arcu venenatis interdum. Sed vulputate eu nibh sed bibendum. Vestibulum sodales vehicula est, ut consectetur purus euismod at. Donec eget felis ut mi facilisis dictum a vel nibh. Vivamus nec vehicula augue. Nulla iaculis ac odio non tincidunt. Vivamus in neque vitae enim volutpat venenatis quis id dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eu lobortis justo, vel ullamcorper felis. Cras sit amet elementum enim. Aliquam erat volutpat. Aliquam rutrum dignissim ex non aliquet. Nunc posuere urna leo, sed eleifend dolor pellentesque id.</p>
+        <motion.div
+                whileHover={{ scale: 1 }}
+                whileTap={{rotate: 10 , scale: 1.1}}
+                transition={5000}
+                className="aboutmeText"
+                animate={{ rotate:0.1 }}>
+                <div className='animate__animated animate__backInRight'>
+                    <h1>About Me</h1>
+            <p>
+     
+            Hello, I'm Simon Radosavljevic, a final-year Computer Science and Automation student at the Faculty of Technical Sciences (FTN) in Novi Sad.
+                <br></br>
+                
+                <div class="animate__animated animate__jackInTheBox animate__delay-2s">
+                Passionate about frontend web development and design, I specialize in creating engaging websites using React. Beyond my studies, I explore diverse programming languages like Python, Java, and C#, showcasing a versatile skill set.
+                
+                <br></br>
+                My IT journey started in high school at ESTS Nikola Tesla in Kraljevo, where I pursued the IT track. Now, as a final-year student, I continue to embrace challenges and expand my skills.
+                <br></br>
+                Proficient in React, Python, Java, C#, and more.
+                Experienced in mobile app development and game design.
+                Committed to continuous learning and staying updated on industry trends.
+                <br></br>
+                I'm open to exciting opportunities and collaborations. Explore my portfolio and connect with me to discuss the fusion of creativity and technology.
+                </div>
+            </p>
+            </div>
+            </motion.div>
         </div>
+        
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Navbar = () => {
           className="logo"
           animate={{ rotate:0.1 }}
         >
-            <Link to="/">
+            <Link to="/portfolio">
         Sajmon.
       </Link>
         </motion.div>
@@ -27,7 +27,7 @@ const Navbar = () => {
           animate={{ rotate:0.1 }}
         >
 
-<CustomLink to="/">Home</CustomLink>
+<CustomLink to="/portfolio">Home</CustomLink>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.1 }}
@@ -43,7 +43,7 @@ const Navbar = () => {
           className="menu"
           animate={{ rotate:0.1 }}
         >
-               <CustomLink to="/">Contact</CustomLink>
+               <CustomLink to="/potfolio">Contact</CustomLink>
         </motion.div>
         </div>
      

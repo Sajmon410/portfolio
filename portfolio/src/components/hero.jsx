@@ -3,13 +3,18 @@ import { motion } from 'framer-motion';
 import './hero.css';
 import {ReactTyped} from "react-typed";
 import img from '../img/photo1.PNG';
-import img2 from '../img/photo2.PNG';
+import img2 from '../img/photo2.png';
 import arrow from '../img/arrow.png';
 const Hero = () => {
     const [isClicked, setIsClicked] = React.useState(false);
-
+    const [hasClicked, setHasClicked] = React.useState(false);
+    let i=5;
     const handleDivClick = () => {
-        setIsClicked(!isClicked);
+          
+                setIsClicked(true);
+                setHasClicked(true);
+        
+            
     };
     const [showNewImage, setShowNewImage] = React.useState(false);
     React.useEffect(() => {
@@ -19,7 +24,7 @@ const Hero = () => {
           timeoutId = setTimeout(() => {
             setShowNewImage(true);
             setIsClicked(false);
-          }, 5000);
+          }, 2000);
         }
     
         return () => clearTimeout(timeoutId);
@@ -39,16 +44,16 @@ const Hero = () => {
         <div className="container-hero">
             <div className='hero'>
                 
-            <div className="hinge" style={{ display: isClicked ? 'block' : 'none' }}> 
+            <div className="animate__animated animate__hinge" style={{ display: isClicked ? 'block' : 'none' }}> 
                 <img src={img2} alt="React Logo" className="image1"/>
-                </div>
+            </div>
             
                 <motion.div
                 whileHover={{ scale: 1 }}
                 whileTap={{rotate: 10 , scale: 1.1}}
                 transition={5000}
                 className="centar"
-                onClick={handleDivClick}
+                onClick={hasClicked ? null : handleDivClick}
                 animate={{ rotate:0.1 }}>
                     <div className='animate__animated animate__jackInTheBox'>
                      <div className="app-container"></div>
@@ -56,7 +61,7 @@ const Hero = () => {
                 <ReactTyped strings={[`My name is  <span style="color: rgb(0, 0, 0);">Simon</span> Radosavljević.`]} typeSpeed={100} loop />
                 </div>
                 </motion.div>
-                <div className="hinge" style={{ display: isClicked ? 'block' : 'none' }}> 
+                <div className="animate__animated animate__hinge" style={{ display: isClicked ? 'block' : 'none' }}> 
                 <img src={img} alt="React Logo" className="image1"/>
                 </div>
                 <div className="projects">

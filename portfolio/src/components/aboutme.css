@@ -1,0 +1,15 @@
+.aboutme{
+   
+}
+.aboutmeText{
+    margin: 0rem 10px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    padding: 25px;
+    padding-top: 5px;
+}
+hr{
+    border: 0.01rem solid rgb(255, 255, 255)
+}

@@ -27,30 +27,30 @@ const AboutMe = () => {
                 animate={{ rotate:0.1 }}>
                 <div className='animate__animated animate__backInRight'>
                     <h1>About Me</h1>
-            <p>
+                     <p>
      
-            <TiInfoLargeOutline style={{color: "black"}}/>Hello, I'm <span style={{color: "black"}}>Simon Radosavljevic</span>, a final-year Computer Science and Automation student at the <span style={{color: "black"}}>Faculty of Technical Sciences (FTN) in Novi Sad</span>.
-                <br></br>
-                
-                <div class="animate__animated animate__jackInTheBox animate__delay-1s">
-                <TiKeyboard style={{color: "black"}}/> Passionate about frontend web development and design, I specialize in <span style={{color: "black"}}>creating engaging websites using React</span>. Beyond my studies, I explore diverse programming languages like <span style={{color: "black"}}>Python, Java, and C#</span>, showcasing a versatile skill set.
-                
-                <br></br>
-                <TiMortarBoard style={{color: "black"}}/> My IT journey started in high school at <span style={{color: "black"}}>ESTS Nikola Tesla in Kraljevo</span>, where I pursued the IT track. Now, as a final-year student, I continue to embrace challenges and expand my skills.
-                <br></br>
-                </div>
-                <div class="animate__animated animate__backInUp animate__delay-2s">
-                <TiDeviceDesktop style={{color: "black"}}/> Proficient in <span style={{color: "black"}}>React, C , C++, Python, Java, C#, and more</span>.
-                Experienced in mobile app development and game design.
-                Committed to continuous learning and staying updated on industry trends.
-                <br></br>
-                <TiMessages style={{color: "black"}}/> I'm <span style={{color: "black"}}>open to exciting opportunities and collaborations</span>. Explore my portfolio and connect with me to discuss the fusion of creativity and technology.
-                </div>
-            </p>
-            </div>
-            </motion.div>
-        </div>
-        
+                        Final-year Computer Science and Automation student at FTN in Novi Sad.
+                        <br></br>
+                      </p>
+                      
+                        <div className="animate__animated animate__jackInTheBox animate__delay-1s">
+                        <p>
+                        Specializing in 
+                        React for engaging web development, I'm proficient in languages like Python, Java, and C#.
+      
+                        Experienced in React, C, C++, Python, Java, and C#.
+                        </p>
+                        </div>
+                        <div className="animate__animated animate__backInUp animate__delay-2s">
+                        <p>
+                        I'm open to exciting opportunities,
+                        exploring mobile app development and game design. Connect with me to discuss the fusion of creativity and technology.
+                        </p>
+                        </div>
+                     
+                 </div>
+          </motion.div>
+        </div>   
     </div>
   );
 };

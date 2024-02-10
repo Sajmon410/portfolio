@@ -6,10 +6,16 @@ import serbia from '../img/serbia.png';
 const Contact = () => {
     return (
         <div className="container-hero">
+             <motion.div
+                whileHover={{ scale: 1 }}
+                whileTap={{rotate: 10 , scale: 1.1}}
+                transition={5000}
+                animate={{ rotate:0.1 }}>
             <div className='animate__animated animate__backInDown'>
             <img src={serbia} alt="New Image" className="serbia" />
+        
             </div>
-            
+            </motion.div>
         </div>
       );
 }

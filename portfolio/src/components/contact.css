@@ -3,3 +3,18 @@
     height: 300px;
     margin: 50px;
 }
+.socials{
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically in the center */
+    flex-direction: row; /* Set the direction to horizontal */
+}
+.socials-item{
+    margin:0  100px;
+    display: flex;
+    align-items: center;
+
+}
+.socials p {
+    margin-left: 5px;
+  }

@@ -6,7 +6,7 @@
     color: #ffffff;
     text-align: center;
     display: flex;
-
+  justify-content: space-between;
 }
 
   .content {
@@ -27,6 +27,9 @@ li{
   .menu{
     font-size: 1rem;
     margin: 0 15px;
+  }
+  .buttons{
+    margin-right: 50px;
   }
   .menu{
     display: inline-block;

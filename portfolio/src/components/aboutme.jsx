@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import './aboutme.css';
 import {ReactTyped} from "react-typed";
 import { TiInfoLargeOutline,TiKeyboard,TiMortarBoard,TiDeviceDesktop,TiMessages  } from "react-icons/ti";
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 const AboutMe = () => {
   return (
     <div className="container-hero">
@@ -47,8 +48,16 @@ const AboutMe = () => {
                         exploring mobile app development and game design. Connect with me to discuss the fusion of creativity and technology.
                         </p>
                         </div>
-                     
-                 </div>
+                        </div>
+                        <motion.div
+                whileHover={{ scale: 1 }}
+                whileTap={{rotate: 10 , scale: 1.1}}
+                transition={5000}
+                className="animate__animated animate__backInUp animate__delay-3s"
+                animate={{ rotate:0.1 }}>
+                 <button className='contact-button'><CustomLink to="/contact">Contact me</CustomLink></button>
+
+                 </motion.div>
           </motion.div>
         </div>   
     </div>
@@ -56,3 +65,15 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  )
+}

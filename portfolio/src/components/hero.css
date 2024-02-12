@@ -75,6 +75,7 @@
   }
   .project{
     display:inline-block;
+   
   }
   .pojetct_del{
     animation: fadeOut 1s ease-out; 
@@ -90,8 +91,8 @@
   }
 
   .fullphoto1{
-    width: 100vh;
-    height: 50vh;
+    width: 650px;
+    height: 350px;
     border-radius: 20px;
   }
   .downimage{
@@ -114,4 +115,7 @@
     100% {
       display: none !important;
     }
+  }
+  .projects{
+    margin-left: 10px;
   }

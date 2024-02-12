@@ -39,3 +39,26 @@ li{
     z-index: 1; /* Osigurava da je sadržaj iznad pruga */
     text-decoration-style:solid;
   }
+
+  .menu-icon{
+    display:none;
+    justify-content: space-between;/* Centriranje teksta horizontalno */
+    align-items: center;
+    padding: 1rem;
+    z-index: 1; /* Osigurava da je sadržaj iznad pruga */
+    text-decoration-style:solid;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 1075px) {
+    .menu-icon{
+      display:inline-block;
+    }
+    .buttons{
+      display: none;
+    }
+  }
+  #nav-elements{
+    background-color: ;
+  }

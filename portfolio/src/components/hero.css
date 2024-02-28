@@ -26,7 +26,15 @@
     border-radius: 50%;
     
   }
-
+.click-on-me{
+  position: fixed;
+  left: 30%;
+  top: 67%; /* Prilagodite po potrebi */
+  transform: translateY(-25%); /* Centriranje vertikalno */
+  padding: 15px;
+  opacity: 0.5;
+  color: black;
+}
   @keyframes hinge {
     0% {
         opacity: 0;
@@ -115,7 +123,4 @@
     100% {
       display: none !important;
     }
-  }
-  .projects{
-    margin-left: 10px;
   }

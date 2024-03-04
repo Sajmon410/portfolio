@@ -3,8 +3,14 @@
     height: 300px;
     margin: 50px;
 }
+.container-hero{
+    display: flex ;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically in the center */
+    flex-direction: column;
+}
 .socials{
-    display: flex;
+    display: flex ;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Align items vertically in the center */
     flex-direction: row; /* Set the direction to horizontal */

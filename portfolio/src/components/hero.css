@@ -1,11 +1,14 @@
 .container-hero{
-    height: 500px;
+    height: 80vh;
     background: linear-gradient(90deg, #9022c3e2, rgb(147, 39, 255));
     border-radius: 10px;
-    margin: 10px 10%;
+    margin: 50px 10%;
     color: rgb(255, 255, 255);
     text-align: center;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .hero{
@@ -35,32 +38,8 @@
   opacity: 0.5;
   color: black;
 }
-  @keyframes hinge {
-    0% {
-        opacity: 0;
-      transform-origin: top left;
-      animation-timing-function: ease-in-out;
-    }
-  
-    20%, 60% {
-        opacity: 1;
-      transform: rotate3d(0, 0, 1, 40deg);
-      animation-timing-function: ease-in-out;
-    }
-  
-    40%, 80% {
-      transform: rotate3d(0, 0, 1, 20deg) translateY(0);
-      animation-timing-function: ease-in-out;
-    }
-    80%, 90%{
-        transform:  translateY(500px);
-        opacity: 0;
-    }
-    to {
-      transform: rotate3d(0, 0, 1, 80deg) translateY(0);
-      opacity: 0;
-    }
-  }
+
+
   .image1{
     width: 300px;
         height: 150px;

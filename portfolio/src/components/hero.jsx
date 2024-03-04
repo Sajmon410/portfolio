@@ -6,7 +6,6 @@ import img1 from "../img/photo1.PNG";
 import img2 from "../img/photo2.PNG";
 import img3 from "../img/photo3.png";
 import arrow from "../img/arrow.png";
-import clickonme from "../img/clickonme.png";
 
 const images = [img1, img2, img3];
 const texts = [
@@ -49,14 +48,11 @@ const Hero = () => {
   return (
     <div className="container-hero">
       <div className="hero">
-        <div
-          className="animate__animated animate__hinge"
-          style={{ display: isClicked ? "block" : "none" }}
-        >
+        <div style={{ display: isClicked ? "block" : "none" }}>
           <img
             src={images[currentImageIndex + 1]}
             alt="React Logo"
-            className="image1"
+            className="animate__animated animate__hinge image1"
           />
         </div>
 
@@ -85,14 +81,11 @@ const Hero = () => {
             />
           </div>
         </motion.div>
-        <div
-          className="animate__animated animate__hinge"
-          style={{ display: isClicked ? "block" : "none" }}
-        >
+        <div style={{ display: isClicked ? "block" : "none" }}>
           <img
             src={images[currentImageIndex]}
             alt="React Logo"
-            className="image1"
+            className="animate__animated animate__hinge image1"
           />
         </div>
         <div className="projects">

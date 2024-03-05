@@ -23,3 +23,37 @@ hr{
     border-width: 2px;
     margin-top: 20px;
 }
+@media screen and (max-width: 1200px) {
+    .about-me-text{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .aboutmeText{
+        margin-left: 0;
+    }
+    .title{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .aboutmeText{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .aboutmeText{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .aboutmeText{
+        width: 250px;
+    }
+    .about-me-text{
+        font-size: 13px;
+    }
+    .title{
+        font-size: 20px;
+    }
+}

@@ -67,6 +67,31 @@ const Navbar = () => {
                   animate={{ rotate: 0.1 }}
                 >
                   <Link to="/portfolio" onClick={handleShowNavbar}>
+                    Sajmon.
+                  </Link>
+                </motion.div>
+              </li>
+              <li>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ rotate: 15, scale: 1.5 }}
+                  className="menu resp"
+                  animate={{ rotate: 0.1 }}
+                >
+                  <IoClose
+                    onClick={handleShowNavbar}
+                    className="menu-icon-phone"
+                  />
+                </motion.div>
+              </li>
+              <li>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ rotate: 15, scale: 1.5 }}
+                  className="menu resp"
+                  animate={{ rotate: 0.1 }}
+                >
+                  <Link to="/portfolio" onClick={handleShowNavbar}>
                     Home
                   </Link>
                 </motion.div>
@@ -75,7 +100,7 @@ const Navbar = () => {
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ rotate: 15, scale: 1.5 }}
-                  className="menu"
+                  className="menu resp"
                   animate={{ rotate: 0.1 }}
                 >
                   <CustomLink to="/aboutme" onClick={handleShowNavbar}>
@@ -87,7 +112,7 @@ const Navbar = () => {
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ rotate: 15, scale: 1.5 }}
-                  className="menu"
+                  className="menu resp"
                   animate={{ rotate: 0.1 }}
                 >
                   <CustomLink to="/contact" onClick={handleShowNavbar}>
@@ -97,7 +122,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <IoClose onClick={handleShowNavbar} className="menu-icon-phone" />
         </div>
       )}
     </div>

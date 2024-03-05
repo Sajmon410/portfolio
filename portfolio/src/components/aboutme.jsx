@@ -21,7 +21,7 @@ const AboutMe = () => {
           className="centar"
           animate={{ rotate: 0.1 }}
         >
-          <div className="animate__animated animate__backInLeft">
+          <div className="animate__animated animate__backInLeft space">
             <div className="app-container"></div>
             <h1 className="text-hero">Welcome.</h1>
             <ReactTyped
@@ -41,23 +41,23 @@ const AboutMe = () => {
           animate={{ rotate: 0.1 }}
         >
           <div className="animate__animated animate__backInRight">
-            <h1>About Me</h1>
-            <p>
-              Final-year Computer Science and Automation student at FTN in Novi
-              Sad.
+            <h1 className="title">About Me</h1>
+            <p className="about-me-text">
+              Final-year Computer Science and Automation student at Faculty of
+              Technical Sciences in Novi Sad.
             </p>
 
             <div className="animate__animated animate__jackInTheBox animate__delay-1s">
-              <p>
-                Specializing in React for engaging web development, I'm
-                proficient in languages like Python, Java, and C#. Experienced
-                in React, C, C++, Python, Java, and C#.
+              <p className="about-me-text">
+                Specializing in React for engaging web development and mobile
+                development. I'm proficient in languages like Java, C# and
+                Python. Experienced in C, C++, .
               </p>
             </div>
             <div className="animate__animated animate__backInUp animate__delay-2s">
-              <p>
+              <p className="about-me-text">
                 I'm open to exciting opportunities, exploring mobile app
-                development and game design. Connect with me to discuss the
+                development and website frontend. Connect with me to discuss the
                 fusion of creativity and technology.
               </p>
             </div>

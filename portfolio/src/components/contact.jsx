@@ -30,7 +30,7 @@ const Contact = () => {
           >
             <LuGithub />{" "}
             <Link to="https://www.github.com/Sajmon410">
-              <p> Sajmon410</p>
+              <p> GitHub</p>
             </Link>
           </motion.div>
         </div>
@@ -44,7 +44,7 @@ const Contact = () => {
           >
             <CiLinkedin />
             <Link to="https://www.linkedin.com/in/simon-radosavljevi%C4%87-2717782b7/">
-              <p> Sajmon410</p>
+              <p> LinkedIn</p>
             </Link>
           </motion.div>
         </div>

@@ -30,6 +30,11 @@
     
   }
 .click-on-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   position: fixed;
   left: 30%;
   top: 67%; /* Prilagodite po potrebi */
@@ -102,4 +107,115 @@
     100% {
       display: none !important;
     }
+  }
+  .projects{
+    margin-left: 100px;
+  }
+  @media screen and (max-width: 1444px) {
+    .fullphoto1{
+      width: 550px;
+    height: 300px;
+    }
+    .container-hero {
+      margin: 25px 5%;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .projects{
+      margin-left: 10px !important;
+    }
+    .fullphoto1{
+      width: 450px;
+    height: 250px;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .container-hero {
+      height: 80vh;
+      background: linear-gradient(90deg, #9022c3e2, rgb(147, 39, 255));
+      border-radius: 10px;
+      margin: 25px 5%;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column; /* Change from row to column */
+      justify-content: center;
+      align-items: center;
+  }
+  .hero{
+    flex-direction: column;
+
+  }
+  .image1{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 40px;
+    margin-top: 10px;
+  }
+  .app-container{
+    width: 200px;
+    height: 170px;
+    justify-content: center;
+  }
+  .centar{
+
+    border-radius: 10px;
+    margin: 25px 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+  }
+  .projects{
+    margin-left: 0 !important;
+  }
+  .fullphoto1{
+    width: 450px;
+  height: 250px;
+  }
+  .space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .click-on-me{
+    margin-left: 40px;
+    justify-content: center;
+    margin-top: 175px;
+    left: 0;
+    top: 0;
+  }
+  .text-hero{
+    font-size: 25px;
+  }
+  @media screen and (max-width: 600px) {
+    .fullphoto1{
+      width: 350px;
+    height: 200px;
+    }
+    .typed{
+      font-size: 15px;
+    }
+    .image1{
+      width: 200px;
+      height: 100px;
+      border-radius: 20px;
+      margin: 40px;
+      margin-top: 10px;
+    }
+    
+  }
+  @media screen and (max-width: 480px) {
+    .fullphoto1{
+      width: 250px;
+    height: 150px;
+    }
+  }
   }

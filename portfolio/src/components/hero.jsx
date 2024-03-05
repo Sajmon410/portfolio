@@ -5,12 +5,14 @@ import { ReactTyped } from "react-typed";
 import img1 from "../img/photo1.PNG";
 import img2 from "../img/photo2.PNG";
 import img3 from "../img/photo3.png";
+import img4 from "../img/photo4.png";
 import arrow from "../img/arrow.png";
 
-const images = [img1, img2, img3];
+const images = [img1, img2, img3, img4];
 const texts = [
   "This is my forum website with login and registration.",
   "Insovlet D.O.O. site (click to view).",
+  "Shopping List, Android application in Java.",
   "This is my first game in C#, back in 2019.",
 ];
 
@@ -64,15 +66,16 @@ const Hero = () => {
           onClick={hasClicked ? null : handleDivClick}
           animate={{ rotate: 0.1 }}
         >
-          <div className="animate__animated animate__jackInTheBox">
+          <div className="animate__animated animate__jackInTheBox space">
             {!hasClicked && (
-              <p className="click-on-me animate__animated animate__flash">
+              <p className="animate__animated animate__flash click-on-me">
                 Click on me.
               </p>
             )}
             <div className="app-container"></div>
             <h1 className="text-hero">Welcome.</h1>
             <ReactTyped
+              className="typed"
               strings={[
                 `My name is  <span style="color: rgb(0, 0, 0);">Simon</span> Radosavljević.`,
               ]}
@@ -88,14 +91,14 @@ const Hero = () => {
             className="animate__animated animate__hinge image1"
           />
         </div>
-        <div className="projects">
-          {showNewImage && (
+
+        {showNewImage && (
+          <div className="projects">
             <motion.div
               key={currentImageIndex}
               initial={{ opacity: 0.1 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              style={{ marginLeft: "100px" }}
               className="animate__animated animate__backInUp"
             >
               <motion.div
@@ -118,8 +121,8 @@ const Hero = () => {
                 className="arrow"
               />
             </motion.div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

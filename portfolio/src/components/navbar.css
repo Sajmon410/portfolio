@@ -59,20 +59,33 @@ li{
       display: none;
     }
   }
+  @media screen and (max-width: 1444px) {
+    .navbar{
+      margin: 25px 5%; 
+    }
+    
+  }
 #nav-elements{
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.9); /* Optionally add a background color with some transparency */
+  background-color: rgba(0, 0, 0, 0.95); /* Optionally add a background color with some transparency */
   z-index: 9999; /* Set a high z-index value */
   display: flex;
   justify-content:center;
 }
-.menu-icon-phone{
-  margin-top: 50px;
-}
+
 .elements{
   margin-top: 30px;
+}
+.menu.resp{
+  color: blueviolet !important;
+}
+.menu:hover{
+  color: blueviolet;
+}
+.ul{
+  padding-left: 0 !important;
 }

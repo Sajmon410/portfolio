@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.32dcabd7.css",
-    "main.js": "/portfolio/static/js/main.4835d650.js",
+    "main.css": "/portfolio/static/css/main.907b1482.css",
+    "main.js": "/portfolio/static/js/main.a54b31e5.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/photo2.PNG": "/portfolio/static/media/photo2.6c0682b32ed475335e21.PNG",
-    "static/media/photo3.png": "/portfolio/static/media/photo3.fb3b8004478b0b805276.png",
+    "static/media/photo4.png": "/portfolio/static/media/photo4.fb3b8004478b0b805276.png",
+    "static/media/photo3.png": "/portfolio/static/media/photo3.b3817e16a0198174350f.png",
     "static/media/por.png": "/portfolio/static/media/por.c9aa853fa2c1e08a09fe.png",
     "static/media/photo1.PNG": "/portfolio/static/media/photo1.ec95bfcd344dcaab808f.PNG",
     "static/media/serbia.png": "/portfolio/static/media/serbia.af42418504a347222a67.png",
     "static/media/arrow.png": "/portfolio/static/media/arrow.8370048b26b7025205a4.png",
     "index.html": "/portfolio/index.html",
-    "main.32dcabd7.css.map": "/portfolio/static/css/main.32dcabd7.css.map",
-    "main.4835d650.js.map": "/portfolio/static/js/main.4835d650.js.map",
+    "main.907b1482.css.map": "/portfolio/static/css/main.907b1482.css.map",
+    "main.a54b31e5.js.map": "/portfolio/static/js/main.a54b31e5.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32dcabd7.css",
-    "static/js/main.4835d650.js"
+    "static/css/main.907b1482.css",
+    "static/js/main.a54b31e5.js"
   ]
 }

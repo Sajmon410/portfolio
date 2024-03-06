@@ -26,12 +26,15 @@ const Hero = () => {
   const handleDivClick = () => {
     setIsClicked(true);
     setHasClicked(true);
-    setResetAnimation(!resetAnimation);
   };
 
   const handleScroll = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    setShowNewImage(true);
+    setResetAnimation(!resetAnimation); // Dodato za resetovanje animacije
+    setTimeout(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setShowNewImage(true);
+      setResetAnimation(false);
+    }, 500);
   };
 
   React.useEffect(() => {
@@ -67,12 +70,14 @@ const Hero = () => {
           animate={{ rotate: 0.1 }}
         >
           <div className="animate__animated animate__jackInTheBox space">
-            {!hasClicked && (
-              <p className="animate__animated animate__flash click-on-me">
-                Click on me.
-              </p>
-            )}
             <div className="app-container"></div>
+            {!hasClicked && (
+              <div className="click-on-me-div">
+                <p className="animate__animated animate__flash click-on-me">
+                  Click on me.
+                </p>
+              </div>
+            )}
             <h1 className="text-hero">Welcome.</h1>
             <ReactTyped
               className="typed"
@@ -99,7 +104,9 @@ const Hero = () => {
               initial={{ opacity: 0.1 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="animate__animated animate__backInUp"
+              className={`animate__animated ${
+                resetAnimation ? "animate__backOutUp" : "animate__backInUp"
+              }`}
             >
               <motion.div
                 whileHover={{ scale: 1 }}
@@ -109,7 +116,7 @@ const Hero = () => {
               >
                 <img
                   src={images[currentImageIndex]}
-                  alt={`Image ${currentImageIndex}`}
+                  alt="slika"
                   className="fullphoto1"
                 />
                 <p className="downimage">{texts[currentImageIndex]}</p>
@@ -117,7 +124,7 @@ const Hero = () => {
               <img
                 src={arrow}
                 onClick={handleScroll}
-                alt="New Image"
+                alt="slika"
                 className="arrow"
               />
             </motion.div>

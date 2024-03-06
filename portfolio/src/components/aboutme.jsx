@@ -2,14 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./aboutme.css";
 import { ReactTyped } from "react-typed";
-import {
-  TiInfoLargeOutline,
-  TiKeyboard,
-  TiMortarBoard,
-  TiDeviceDesktop,
-  TiMessages,
-} from "react-icons/ti";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
 const AboutMe = () => {
   return (
     <div className="container-hero">
@@ -70,15 +62,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}

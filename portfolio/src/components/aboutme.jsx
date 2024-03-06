@@ -50,8 +50,9 @@ const AboutMe = () => {
             <div className="animate__animated animate__jackInTheBox animate__delay-1s">
               <p className="about-me-text">
                 Specializing in React for engaging web development and mobile
-                development. I'm proficient in languages like Java, C# and
-                Python. Experienced in C, C++, .
+                development. I'm proficient in languages like
+                JavaScript/TypeScript, Java, C# and Python. Experienced in C and
+                C++.
               </p>
             </div>
             <div className="animate__animated animate__backInUp animate__delay-2s">

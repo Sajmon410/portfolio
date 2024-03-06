@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./hero.css";
+import "./../styles/hero.css";
 import { ReactTyped } from "react-typed";
 import img1 from "../img/photo1.PNG";
 import img2 from "../img/photo2.PNG";

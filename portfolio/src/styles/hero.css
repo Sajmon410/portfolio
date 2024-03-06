@@ -32,27 +32,23 @@
     justify-content: center;
   }
 .click-on-me{
-
-  opacity: 0.5;
-  color: black;
-  margin-top: 15px;
-  margin-bottom: -15px;
+    opacity: 0.5;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: -15px;
 }
-
-
-  .image1{
+.image1{
     width: 300px;
-        height: 150px;
-        border-radius: 20px;
-        margin: 40px;
-        margin-top: 100px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 40px;
+    
   }
   .hinge {
     overflow: hidden; 
     animation: hinge 5s;
     transform-origin: top left;
   }
-
   .centasr {
     animation: backOutUp 10s ease-out;
     animation-fill-mode: forwards; /* Da održi stil nakon završetka animacije */
@@ -96,9 +92,6 @@
     0% {
       opacity: 1;
     }
-  
-
-  
     100% {
       display: none !important;
     }
@@ -140,7 +133,6 @@
   }
   .hero{
     flex-direction: column;
-
   }
   .image1{
     width: 300px;
@@ -155,7 +147,6 @@
     justify-content: center;
   }
   .centar{
-
     border-radius: 10px;
     margin: 25px 0px;
     color: rgb(255, 255, 255);
@@ -171,7 +162,7 @@
   }
   .fullphoto1{
     width: 450px;
-  height: 250px;
+    height: 250px;
   }
   .space{
     display: flex;
@@ -179,9 +170,6 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-  }
-  .click-on-me{
-
   }
   .text-hero{
     font-size: 25px;

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./navbar.css";
+import "./../styles/navbar.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
 

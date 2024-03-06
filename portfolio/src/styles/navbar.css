@@ -1,0 +1,89 @@
+.navbar {
+    overflow: hidden;
+    background: linear-gradient(90deg, #9022c3e2, rgb(147, 39, 255));
+    border-radius: 10px;
+    margin: 40px 10%;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+  justify-content: space-between;
+}
+
+  .content {
+    margin: 0px 20%;
+
+    padding: 1rem;
+    height: 100%;
+    z-index: 1;
+    text-decoration-style:solid;
+  }
+li{
+  list-style: none;
+  }
+.logo {
+  font-size: 1.1rem;
+}
+.menu{
+  font-size: 1rem;
+  margin: 0 15px;
+}
+.buttons{
+  margin-right: 50px;
+}
+.menu{
+  display: inline-block;
+  justify-content: space-between;/* Centriranje teksta horizontalno */
+  align-items: center;
+  padding: 1rem;
+  z-index: 1; /* Osigurava da je sadržaj iznad pruga */
+  text-decoration-style:solid;
+}
+
+.menu-icon{
+  display:none;
+  justify-content: space-between;/* Centriranje teksta horizontalno */
+  align-items: center;
+  padding: 1rem;
+  z-index: 1; /* Osigurava da je sadržaj iznad pruga */
+  text-decoration-style:solid;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 1075px) {
+  .menu-icon{
+    display:inline-block;
+  }    
+  .buttons{
+     display: none;
+  }
+  }
+@media screen and (max-width: 1444px) {
+  .navbar{
+     margin: 25px 5%; 
+   }
+}
+#nav-elements{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95); /* Optionally add a background color with some transparency */
+  z-index: 9999; /* Set a high z-index value */
+  display: flex;
+  justify-content:center;
+}
+
+.elements{
+  margin-top: 30px;
+}
+.menu.resp{
+  color: blueviolet !important;
+}
+.menu:hover{
+  color: blueviolet;
+}
+.ul{
+  padding-left: 0 !important;
+}

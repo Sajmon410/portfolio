@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./aboutme.css";
+import "./../styles/aboutme.css";
 import { ReactTyped } from "react-typed";
 const AboutMe = () => {
   return (

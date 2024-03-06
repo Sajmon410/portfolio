@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ReactTyped } from "react-typed";
-import "./contact.css";
+import "./../styles/contact.css";
 import { LuGithub } from "react-icons/lu";
 import { CiLinkedin } from "react-icons/ci";
 import serbia from "../img/serbia.png";

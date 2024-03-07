@@ -2,18 +2,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./../styles/hero.css";
 import { ReactTyped } from "react-typed";
+import { Link } from "react-router-dom";
 import img1 from "../img/photo1.PNG";
 import img2 from "../img/photo2.PNG";
 import img3 from "../img/photo3.png";
 import img4 from "../img/photo4.png";
+import img5 from "../img/photo5.PNG";
 import arrow from "../img/arrow.png";
 
-const images = [img1, img2, img3, img4];
+const images = [img1, img2, img3, img4, img5];
 const texts = [
-  "This is my forum website with login and registration.",
-  "Insovlet D.O.O. site (click to view).",
+  `My social network in VanillaJS. (click to view)`,
+  "I was engaged to assist with the front-end development on this project.",
   "Shopping List, Android application in Java.",
   "This is my first game in C#, back in 2019.",
+  "Insovlet D.O.O. site (not yet deployed).",
+];
+const hrefs = [
+  "https://sajmon410.github.io",
+  "https://jewelryshopdoro.com/ ",
+  "https://github.com/Sajmon410/ShoppingList",
+  "https://github.com/Sajmon410/Sajmon-s-slime",
+  " ",
 ];
 
 const Hero = () => {
@@ -55,7 +65,7 @@ const Hero = () => {
       <div className="hero">
         <div style={{ display: isClicked ? "block" : "none" }}>
           <img
-            src={images[currentImageIndex + 1]}
+            src={images[2]}
             alt="React Logo"
             className="animate__animated animate__hinge image1"
           />
@@ -91,7 +101,7 @@ const Hero = () => {
         </motion.div>
         <div style={{ display: isClicked ? "block" : "none" }}>
           <img
-            src={images[currentImageIndex]}
+            src={images[0]}
             alt="React Logo"
             className="animate__animated animate__hinge image1"
           />
@@ -114,11 +124,14 @@ const Hero = () => {
                 transition={5000}
                 animate={{ rotate: 0.1 }}
               >
-                <img
-                  src={images[currentImageIndex]}
-                  alt="slika"
-                  className="fullphoto1"
-                />
+                <Link to={hrefs[currentImageIndex]} target="_blank">
+                  <img
+                    src={images[currentImageIndex]}
+                    alt="slika"
+                    className="fullphoto1"
+                    href={hrefs[currentImageIndex]}
+                  />
+                </Link>
                 <p className="downimage">{texts[currentImageIndex]}</p>
               </motion.div>
               <img

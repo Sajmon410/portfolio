@@ -35,23 +35,24 @@ const AboutMe = () => {
           <div className="animate__animated animate__backInRight">
             <h1 className="title">About Me</h1>
             <p className="about-me-text">
-              Final-year Computer Science and Automation student at Faculty of
-              Technical Sciences in Novi Sad.
+              As a final-year student majoring in Computing and Control
+              Engineering within the "Computer Technologies and Computer
+              Communications" department,
             </p>
 
             <div className="animate__animated animate__jackInTheBox animate__delay-1s">
               <p className="about-me-text">
-                Specializing in React for engaging web development and mobile
-                development. I'm proficient in languages like
-                JavaScript/TypeScript, Java, C# and Python. Experienced in C and
-                C++.
+                I am deeply passionate about developing cutting-edge websites
+                and mobile applications. My academic journey has equipped me
+                with a strong foundation in computing principles and control
+                engineering,
               </p>
             </div>
             <div className="animate__animated animate__backInUp animate__delay-2s">
               <p className="about-me-text">
-                I'm open to exciting opportunities, exploring mobile app
-                development and website frontend. Connect with me to discuss the
-                fusion of creativity and technology.
+                and I have chosen to specialize in the dynamic intersection of
+                computer technologies and communications. I aspire to graduate
+                this year.
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(90deg, #000000, rgb(70, 1, 140));
+  background-color: #230046;
   user-select: none;
 }
  ul{

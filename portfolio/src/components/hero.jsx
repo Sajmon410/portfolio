@@ -16,14 +16,14 @@ const texts = [
   "I was engaged to assist with the front-end development on this project.",
   "Shopping List, Android application in Java.",
   "This is my first game in C#, back in 2019.",
-  "Insovlet D.O.O. site (not yet deployed).",
+  "Landing page for bookkeeping agency.",
 ];
 const hrefs = [
   "https://sajmon410.github.io",
   "https://jewelryshopdoro.com/ ",
   "https://github.com/Sajmon410/ShoppingList",
   "https://github.com/Sajmon410/Sajmon-s-slime",
-  " ",
+  null,
 ];
 
 const Hero = () => {
@@ -124,7 +124,11 @@ const Hero = () => {
                 transition={5000}
                 animate={{ rotate: 0.1 }}
               >
-                <Link to={hrefs[currentImageIndex]} target="_blank">
+                <Link
+                  to={hrefs[currentImageIndex]}
+                  target="_blank"
+                  className={hrefs[currentImageIndex] ? "" : "disabled-link"}
+                >
                   <img
                     src={images[currentImageIndex]}
                     alt="slika"

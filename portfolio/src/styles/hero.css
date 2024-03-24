@@ -18,10 +18,10 @@
 .text-hero {
 }
 .app-container {
-  background-image: url("../../public/por.png"); /* Adjust the path based on your project structure */
-  background-size: cover; /* or 'contain', depending on how you want the image to be sized */
+  background-image: url("../../public/por.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 300px; /* Set the width and height based on your requirements */
+  width: 300px;
   height: 250px;
   border-radius: 50%;
 }
@@ -47,7 +47,7 @@
 }
 .centasr {
   animation: backOutUp 10s ease-out;
-  animation-fill-mode: forwards; /* Da održi stil nakon završetka animacije */
+  animation-fill-mode: forwards;
 }
 .hidden {
   display: none !important;
@@ -122,7 +122,7 @@
     text-align: center;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Change from row to column */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }

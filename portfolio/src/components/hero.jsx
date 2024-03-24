@@ -39,7 +39,7 @@ const Hero = () => {
   };
 
   const handleScroll = () => {
-    setResetAnimation(!resetAnimation); // Dodato za resetovanje animacije
+    setResetAnimation(!resetAnimation);
     setTimeout(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
       setShowNewImage(true);

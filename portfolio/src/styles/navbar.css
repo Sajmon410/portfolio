@@ -10,7 +10,7 @@
 }
 
 .content {
-  margin: 0px 20%;
+  margin: 0px 20% 0px 80px;
 
   padding: 1rem;
   height: 100%;
@@ -86,4 +86,10 @@ li {
 }
 .ul {
   padding-left: 0 !important;
+}
+
+@media screen and (max-width: 1075px) {
+  .content {
+    margin: 0px 20% 0px 20px;
+  }
 }

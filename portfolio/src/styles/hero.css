@@ -199,3 +199,13 @@
 .disabled-link {
   pointer-events: none;
 }
+
+@media screen and (max-height: 600px) {
+  .centar{
+    margin-bottom: 10px;
+    
+  }
+  .text-hero{
+    margin: 5px;
+  }
+}

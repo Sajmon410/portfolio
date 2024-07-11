@@ -50,7 +50,7 @@ const AboutMe = () => {
             </div>
             <div className="animate__animated animate__backInUp animate__delay-2s">
               <p className="about-me-text">
-                and I have chosen to specialize in the dynamic intersection of
+                I have chosen to specialize in the dynamic intersection of
                 computer technologies and communications. I aspire to graduate
                 this year.
               </p>

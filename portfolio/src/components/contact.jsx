@@ -15,7 +15,7 @@ const Contact = () => {
         animate={{ rotate: 0.1 }}
       >
         <div className="animate__animated animate__backInDown">
-          <img src={serbia} alt="New Image" className="serbia" />
+          <img src={serbia} alt="serbia" className="serbia" />
         </div>
       </motion.div>
       <div className="socials">

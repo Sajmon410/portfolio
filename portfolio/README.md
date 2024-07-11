@@ -1,2 +1,2 @@
-Portfolio site written in ReactJS.
-www.sajmon410.github.io/portfolio
+Portfolio site written in ReactJS. <br>
+https://sajmon410.github.io/portfolio/

@@ -8,15 +8,17 @@ import img2 from "../img/photo2.PNG";
 import img3 from "../img/photo3.png";
 import img4 from "../img/photo4.png";
 import img5 from "../img/photo5.PNG";
+import img6 from "../img/photo6.png";
 import arrow from "../img/arrow.png";
 
-const images = [img1, img2, img3, img4, img5];
+const images = [img1, img2, img3, img4, img5, img6];
 const texts = [
-  `My social network in VanillaJS. (click to view)`,
-  "I was engaged to assist with the front-end development on this project.",
-  "Shopping List, Android application in Java.",
-  "This is my first game in C#, back in 2019.",
-  "Landing page for bookkeeping agency.",
+  `My Social Network in VanillaJS. (click to view)`,
+  "I was engaged to assist with the front-end development.",
+  "Shopping List, Android Application in Java.",
+  "My first game in C#, back in 2019.",
+  "Landing page for Bookkeeping Agency.",
+  "Organizer, My First Flutter App for Task Management."
 ];
 const hrefs = [
   "https://sajmon410.github.io",
@@ -24,6 +26,7 @@ const hrefs = [
   "https://github.com/Sajmon410/ShoppingList",
   "https://github.com/Sajmon410/Sajmon-s-slime",
   null,
+  "https://github.com/Sajmon410/organizer",
 ];
 
 const Hero = () => {

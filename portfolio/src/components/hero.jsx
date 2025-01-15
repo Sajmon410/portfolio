@@ -34,8 +34,9 @@ const Hero = () => {
   const [isClicked, setIsClicked] = React.useState(false);
   const [hasClicked, setHasClicked] = React.useState(false);
   const [showNewImage, setShowNewImage] = React.useState(false);
+  const [imageClass, setImageClass] = React.useState("animate__animated animate__bounceInLeft image1");
   const [resetAnimation, setResetAnimation] = React.useState(false);
-
+  
   const handleDivClick = () => {
     setIsClicked(true);
     setHasClicked(true);
@@ -50,6 +51,19 @@ const Hero = () => {
     }, 500);
   };
 
+  // useEffect za menjanje klasa
+  React.useEffect(() => {
+    let timer;
+    if (isClicked) {
+      // Prvo pokrećemo bounceIn animaciju
+      timer = setTimeout(() => {
+        setImageClass("animate__animated animate__hinge image1"); // Nakon 3 sekunde menja se na hinge
+      }, 1500);
+    }
+
+    return () => clearTimeout(timer);  // Čisti timeout kada je komponenta demontirana
+  }, [isClicked]);
+
   React.useEffect(() => {
     let timeoutId;
 
@@ -57,20 +71,20 @@ const Hero = () => {
       timeoutId = setTimeout(() => {
         setShowNewImage(true);
         setIsClicked(false);
-      }, 2000);
+      }, 3500);  // Zadrži sliku sa hinge animacijom pre nego što prikaže novu sliku
     }
 
     return () => clearTimeout(timeoutId);
-  }, [isClicked, resetAnimation]);
+  }, [isClicked]);
 
   return (
     <div className="container-hero">
       <div className="hero">
         <div style={{ display: isClicked ? "block" : "none" }}>
           <img
-            src={images[2]}
-            alt="React Logo"
-            className="animate__animated animate__hinge image1"
+            src={images[2]}  // Možeš promeniti indeks slike prema potrebama
+            alt="Image1"
+            className={imageClass}  // Klasa se dinamički menja
           />
         </div>
 
@@ -104,9 +118,9 @@ const Hero = () => {
         </motion.div>
         <div style={{ display: isClicked ? "block" : "none" }}>
           <img
-            src={images[0]}
-            alt="React Logo"
-            className="animate__animated animate__hinge image1"
+            src={images[0]}  // Možeš promeniti indeks slike prema potrebama
+            alt="Image1"
+            className={imageClass}  // Klasa se dinamički menja
           />
         </div>
 

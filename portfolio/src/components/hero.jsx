@@ -34,7 +34,7 @@ const Hero = () => {
   const [isClicked, setIsClicked] = React.useState(false);
   const [hasClicked, setHasClicked] = React.useState(false);
   const [showNewImage, setShowNewImage] = React.useState(false);
-  const [imageClass, setImageClass] = React.useState("animate__animated animate__bounceInLeft image1");
+  const [imageClass, setImageClass] = React.useState("animate__animated animate__backInLeft image1");
   const [resetAnimation, setResetAnimation] = React.useState(false);
   
   const handleDivClick = () => {

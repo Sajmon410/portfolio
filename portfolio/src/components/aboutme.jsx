@@ -35,18 +35,23 @@ const AboutMe = () => {
           <div className="animate__animated animate__backInRight">
             <h1 className="title">About Me</h1>
             <p className="about-me-text">
-              As a final-year student majoring in Computing and Control
-              Engineering within the "Computer Technologies and Computer
+              As a final-year student majoring in{' '}
+              <span style={{ color: '#c985ed' }}>
+               Computing and Control Engineering 
+              </span>{' '}
+              within the "Computer Technologies and Computer
               Communications" department,
             </p>
 
             <div className="animate__animated animate__jackInTheBox animate__delay-1s">
-              <p className="about-me-text">
-                I am deeply passionate about developing cutting-edge websites
-                and mobile applications. My academic journey has equipped me
-                with a strong foundation in computing principles and control
-                engineering,
-              </p>
+            <p className="about-me-text">
+              I am deeply passionate about developing{' '}
+              <span style={{ color: '#c985ed' }}>
+                cutting-edge websites and mobile applications.
+              </span>{' '}
+              My academic journey has equipped me with a strong foundation in computing
+              principles.
+            </p>
             </div>
             <div className="animate__animated animate__backInUp animate__delay-2s">
               <p className="about-me-text">

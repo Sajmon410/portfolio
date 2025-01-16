@@ -51,17 +51,15 @@ const Hero = () => {
     }, 500);
   };
 
-  // useEffect za menjanje klasa
   React.useEffect(() => {
     let timer;
     if (isClicked) {
-      // Prvo pokrećemo bounceIn animaciju
       timer = setTimeout(() => {
-        setImageClass("animate__animated animate__hinge image1"); // Nakon 3 sekunde menja se na hinge
+        setImageClass("animate__animated animate__hinge image1"); 
       }, 1500);
     }
 
-    return () => clearTimeout(timer);  // Čisti timeout kada je komponenta demontirana
+    return () => clearTimeout(timer);  
   }, [isClicked]);
 
   React.useEffect(() => {
@@ -71,7 +69,7 @@ const Hero = () => {
       timeoutId = setTimeout(() => {
         setShowNewImage(true);
         setIsClicked(false);
-      }, 3500);  // Zadrži sliku sa hinge animacijom pre nego što prikaže novu sliku
+      }, 3500); 
     }
 
     return () => clearTimeout(timeoutId);
@@ -82,9 +80,9 @@ const Hero = () => {
       <div className="hero">
         <div style={{ display: isClicked ? "block" : "none" }}>
           <img
-            src={images[2]}  // Možeš promeniti indeks slike prema potrebama
+            src={images[2]} 
             alt="Image1"
-            className={imageClass}  // Klasa se dinamički menja
+            className={imageClass}
           />
         </div>
 
@@ -118,9 +116,9 @@ const Hero = () => {
         </motion.div>
         <div style={{ display: isClicked ? "block" : "none" }}>
           <img
-            src={images[0]}  // Možeš promeniti indeks slike prema potrebama
+            src={images[0]} 
             alt="Image1"
-            className={imageClass}  // Klasa se dinamički menja
+            className={imageClass} 
           />
         </div>
 

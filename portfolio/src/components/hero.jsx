@@ -14,7 +14,7 @@ import arrow from "../img/arrow.png";
 const images = [img1, img2, img3, img4, img5, img6];
 const texts = [
   `My Social Network in VanillaJS. (click to view)`,
-  "I was engaged to assist with the front-end development.",
+  "I was engaged on a project featuring E-commerce web application.",
   "Shopping List, Android Application in Java.",
   "My first game in C#, back in 2019.",
   "Landing page for Bookkeeping Agency.",

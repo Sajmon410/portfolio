@@ -9,6 +9,15 @@ const Navbar = () => {
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+
+  const handleLogoClick = (e) => {
+    // Proveri da li je trenutni URL `/portfolio` i osveži stranicu
+    if (window.location.pathname === "/portfolio") {
+      e.preventDefault();
+      window.location.href = "/portfolio";
+    }
+  };
+
   return (
     <div className="navbar">
       <>
@@ -19,7 +28,9 @@ const Navbar = () => {
             className="logo"
             animate={{ rotate: 0.1 }}
           >
-            <Link to="/portfolio">Sajmon.</Link>
+            <Link to="/portfolio" onClick={handleLogoClick}>
+              Sajmon.
+            </Link>
           </motion.div>
         </div>
         <div className="buttons">
@@ -66,7 +77,7 @@ const Navbar = () => {
                   className="menu"
                   animate={{ rotate: 0.1 }}
                 >
-                  <Link to="/portfolio" onClick={handleShowNavbar}>
+                  <Link to="/portfolio" onClick={handleLogoClick}>
                     Sajmon.
                   </Link>
                 </motion.div>
@@ -129,13 +140,22 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
+  const handleClick = (e) => {
+    if (isActive) {
+      // Ako je trenutna stranica ista kao cilj, osveži stranicu
+      e.preventDefault();
+      window.location.href = to;
+    }
+  };
+
   return (
     <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
+      <Link to={to} onClick={handleClick} {...props}>
         {children}
       </Link>
     </li>

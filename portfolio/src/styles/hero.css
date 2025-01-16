@@ -1,6 +1,6 @@
 .container-hero {
   height: 80vh;
-  background: linear-gradient(90deg, #9022c3e2, rgb(147, 39, 255));
+  background: linear-gradient(45deg, #000000, #330165);
   border-radius: 10px;
   margin: 50px 10%;
   color: rgb(255, 255, 255);
@@ -29,7 +29,7 @@
 }
 .click-on-me {
   opacity: 0.5;
-  color: black;
+  color: #c985ed;
   margin-top: 15px;
   margin-bottom: -15px;
 }
@@ -114,7 +114,7 @@
 @media screen and (max-width: 1050px) {
   .container-hero {
     height: 80vh;
-    background: linear-gradient(90deg, #9022c3e2, rgb(147, 39, 255));
+    background: linear-gradient(45deg, #000000, #330165);
     border-radius: 10px;
     margin: 25px 5%;
     color: rgb(255, 255, 255);

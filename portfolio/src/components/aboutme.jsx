@@ -18,7 +18,7 @@ const AboutMe = () => {
             <h1 className="text-hero">Welcome.</h1>
             <ReactTyped
               strings={[
-                `My name is  <span style="color: rgb(0, 0, 0);">Simon</span> Radosavljević.`,
+                `My name is  <span style="color: #c985ed;">Simon</span> Radosavljević.`,
               ]}
               typeSpeed={100}
               loop

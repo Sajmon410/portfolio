@@ -11,22 +11,22 @@ import img5 from "../img/photo5.PNG";
 import img6 from "../img/photo6.png";
 import arrow from "../img/arrow.png";
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [img1, img2, img3, img6, img5, img4];
 const texts = [
   `My Social Network in VanillaJS. (click to view)`,
   "I was engaged on a project featuring E-commerce web application.",
   "Shopping List, Android Application in Java.",
-  "My first game in C#, back in 2019.",
+  "Organizer, My First Flutter App for Task Management.",
   "Landing page for Bookkeeping Agency.",
-  "Organizer, My First Flutter App for Task Management."
+  "Sajmon's Slime, my first game in C#  back in 2019.",
 ];
 const hrefs = [
   "https://sajmon410.github.io",
   "https://jewelryshopdoro.com/ ",
   "https://github.com/Sajmon410/ShoppingList",
-  "https://github.com/Sajmon410/Sajmon-s-slime",
-  null,
   "https://github.com/Sajmon410/organizer",
+  null,
+  "https://github.com/Sajmon410/Sajmon-s-slime",
 ];
 
 const Hero = () => {

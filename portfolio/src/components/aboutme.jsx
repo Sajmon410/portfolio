@@ -47,7 +47,7 @@ const AboutMe = () => {
             <p className="about-me-text">
               I am deeply passionate about developing{' '}
               <span style={{ color: '#c985ed' }}>
-                cutting-edge websites and mobile applications.
+                Cutting-Edge Websites and Mobile Applications.
               </span>{' '}
               My academic journey has equipped me with a strong foundation in computing
               principles.
@@ -55,9 +55,11 @@ const AboutMe = () => {
             </div>
             <div className="animate__animated animate__backInUp animate__delay-2s">
               <p className="about-me-text">
-                I have chosen to specialize in the dynamic intersection of
-                computer technologies and communications. I aspire to graduate
-                this year.
+                I have chosen to specialize in the dynamic intersection of     {' '}
+                <span style={{ color: '#c985ed' }}>
+                Computer Technologies and Communications.
+                </span>{' '}
+                 I aspire to graduate this year.
               </p>
             </div>
           </div>

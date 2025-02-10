@@ -22,28 +22,32 @@ const Contact = () => {
         <div className="animate__animated animate__fadeInUp">
           <motion.div
             className="socials-item"
-            whileHover={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
             whileTap={{ rotate: 10, scale: 1.1 }}
             transition={5000}
             animate={{ rotate: 0.1 }}
           >
-            <LuGithub />{" "}
             <Link to="https://www.github.com/Sajmon410">
-              <p className="social-paragraf"> GitHub</p>
+            <LuGithub />{" "}
+            </Link>
+            <Link to="https://www.github.com/Sajmon410">
+              <p> GitHub</p>
             </Link>
           </motion.div>
         </div>
         <div className="animate__animated animate__fadeInUp">
           <motion.div
             className="socials-item"
-            whileHover={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
             whileTap={{ rotate: 10, scale: 1.1 }}
             transition={5000}
             animate={{ rotate: 0.1 }}
           >
-            <CiLinkedin />
             <Link to="https://www.linkedin.com/in/simon-radosavljevi%C4%87-2717782b7/">
-              <p className="social-paragraf"> LinkedIn</p>
+            <CiLinkedin />
+            </Link>
+            <Link to="https://www.linkedin.com/in/simon-radosavljevi%C4%87-2717782b7/">
+              <p> LinkedIn</p>
             </Link>
           </motion.div>
         </div>

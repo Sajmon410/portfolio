@@ -87,8 +87,8 @@ const Hero = () => {
         </div>
 
         <motion.div
-          whileHover={{ scale: 1 }}
-          whileTap={{ rotate: 10, scale: 1.1 }}
+          whileHover={{ scale: 1.09 }}
+          whileTap={{ rotate: 10, scale: 1.07 }}
           transition={5000}
           className="centar"
           onClick={hasClicked ? null : handleDivClick}
@@ -134,7 +134,7 @@ const Hero = () => {
               }`}
             >
               <motion.div
-                whileHover={{ scale: 1 }}
+                whileHover={{ scale: 1.04 }}
                 whileTap={{ rotate: 10, scale: 1.1 }}
                 transition={5000}
                 animate={{ rotate: 0.1 }}
@@ -153,13 +153,16 @@ const Hero = () => {
                 </Link>
                 <p className="downimage">{texts[currentImageIndex]}</p>
               </motion.div>
-              
+              <motion.div
+                whileHover={{ scale: 1.15 }}
+              >
               <img
                 src={arrow}
                 onClick={handleScroll}
                 alt="slika"
                 className="arrow"
               />
+              </motion.div>
             </motion.div>
           </div>
         )}

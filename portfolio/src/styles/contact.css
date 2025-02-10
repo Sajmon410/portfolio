@@ -23,6 +23,7 @@
 .socials p {
   margin-left: 5px;
   color:#c985ed;
+  cursor: pointer !important;
 }
 @media screen and (max-width: 550px) {
   .socials {

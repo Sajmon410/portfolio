@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 .content {
   margin: 0px 20% 0px 80px;
 
@@ -22,6 +21,7 @@ li {
 }
 .logo {
   font-size: 1.1rem;
+  color: #c985ed;
 }
 .menu {
   font-size: 1rem;

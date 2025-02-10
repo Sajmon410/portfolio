@@ -153,6 +153,7 @@ const Hero = () => {
                 </Link>
                 <p className="downimage">{texts[currentImageIndex]}</p>
               </motion.div>
+              
               <img
                 src={arrow}
                 onClick={handleScroll}

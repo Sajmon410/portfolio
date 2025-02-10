@@ -81,6 +81,7 @@
   border-width: 0.1rem;
   width: 25px;
   height: 25px;
+  cursor:pointer;
 }
 @keyframes animate__backOutUp {
   0% {
@@ -199,7 +200,7 @@
   }
 }
 .disabled-link {
-  pointer-events: none;
+  pointer-events: all;
 }
 
 @media screen and (max-height: 600px) {

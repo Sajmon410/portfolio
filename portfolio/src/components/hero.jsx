@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./../styles/hero.css";
 import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
+import img0 from "../img/photo0.png";
 import img1 from "../img/photo1.PNG";
 import img2 from "../img/photo2.PNG";
 import img3 from "../img/photo3.png";
@@ -11,8 +12,9 @@ import img5 from "../img/photo5.PNG";
 import img6 from "../img/photo6.png";
 import arrow from "../img/arrow.png";
 
-const images = [img1, img2, img3, img6, img5, img4];
+const images = [img0, img1, img2, img3, img6, img5, img4];
 const texts = [
+  "Flutter App for Live ESP32 Streaming, Photo Capture, and Location Mapping.",
   `My Social Network in VanillaJS. (click to view)`,
   "I was engaged on a project featuring E-commerce web application.",
   "Shopping List, Android Application in Java.",
@@ -21,6 +23,7 @@ const texts = [
   "Sajmon's Slime, my first game in C#  back in 2019.",
 ];
 const hrefs = [
+  "https://github.com/Sajmon410/flutter-esp32",
   "https://sajmon410.github.io",
   "https://jewelryshopdoro.com/ ",
   "https://github.com/Sajmon410/ShoppingList",
@@ -80,7 +83,7 @@ const Hero = () => {
       <div className="hero">
         <div style={{ display: isClicked ? "block" : "none" }}>
           <img
-            src={images[2]} 
+            src={images[1]} 
             alt="Image1"
             className={imageClass}
           />

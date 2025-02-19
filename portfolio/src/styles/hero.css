@@ -16,7 +16,9 @@
   justify-content: center;
   cursor: pointer;
 }
-
+.centar:hover .click-on-me{
+  color: white;
+}
 .app-container {
   background-image: url("../../public/por.png");
   background-size: cover;

@@ -53,6 +53,9 @@ li {
   height: 20px;
   margin-right: 20px;
 }
+.menu-icon-phone{
+  cursor: pointer;
+}
 @media screen and (max-width: 1075px) {
   .menu-icon {
     display: inline-block;

@@ -24,7 +24,15 @@ hr {
   margin-top: 20px;
 }
 .pdfbutton{
-  color:#c985ed;
+  color: black;
+  background-color: #c985ed;
+  border-style: none;
+  border-radius: 7px;
+  width: 70px;
+  height: 23px;
+}
+button:hover {
+  color: white;
 }
 @media screen and (max-width: 1200px) {
   .about-me-text {
@@ -37,6 +45,7 @@ hr {
   }
   .title {
     font-size: 25px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 750px) {

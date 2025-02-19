@@ -74,7 +74,7 @@ const AboutMe = () => {
         >
           <div className="animate__animated animate__bounceIn animate__delay-3s">
           <button className="pdfbutton" onClick={openPdf}>
-            Open PDF
+            Open CV
         </button>
         </div>
         </motion.div>

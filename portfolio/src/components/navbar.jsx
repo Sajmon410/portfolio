@@ -149,7 +149,7 @@ function CustomLink({ to, children, ...props }) {
     if (isActive) {
       // Ako je trenutna stranica ista kao cilj, osveži stranicu
       e.preventDefault();
-      window.location.href = to;
+      window.location.reload();
     }
   };
 

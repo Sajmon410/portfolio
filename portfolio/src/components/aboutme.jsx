@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./../styles/aboutme.css";
 import { ReactTyped } from "react-typed";
+const openPdf = () => {
+  window.open(`${window.location.origin}/portfolio/SimonRadosavljevic.pdf`, '_blank');
+};
 const AboutMe = () => {
   return (
     <div className="container-hero">
@@ -63,7 +66,19 @@ const AboutMe = () => {
               </p>
             </div>
           </div>
+          <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ rotate: 10, scale: 1.1 }}
+          transition={10000}
+          animate={{ rotate: 0.1 }}
+        >
+          <div className="animate__animated animate__bounceIn animate__delay-3s">
+          <button className="pdfbutton" onClick={openPdf}>
+            Open PDF
+        </button>
+        </div>
         </motion.div>
+      </motion.div>
       </div>
     </div>
   );

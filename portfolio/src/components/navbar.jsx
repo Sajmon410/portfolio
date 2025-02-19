@@ -28,8 +28,8 @@ const Navbar = () => {
             className="logo"
             animate={{ rotate: 0.1 }}
           >
-            <Link to="/portfolio" onClick={handleLogoClick}>
-              Sajmon.
+            <Link className="nav-text" to="/portfolio" onClick={handleLogoClick}>
+              Sajmon
             </Link>
           </motion.div>
         </div>
@@ -40,7 +40,7 @@ const Navbar = () => {
             className="menu"
             animate={{ rotate: 0.1 }}
           >
-            <CustomLink to="/portfolio">Home</CustomLink>
+            <CustomLink className="nav-text" to="/portfolio">Home</CustomLink>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -48,7 +48,7 @@ const Navbar = () => {
             className="menu"
             animate={{ rotate: 0.1 }}
           >
-            <CustomLink to="/aboutme">About Me</CustomLink>
+            <CustomLink className="nav-text" to="/aboutme">About Me</CustomLink>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -56,7 +56,7 @@ const Navbar = () => {
             className="menu"
             animate={{ rotate: 0.1 }}
           >
-            <CustomLink to="/contact">Contact</CustomLink>
+            <CustomLink className="nav-text" to="/contact">Contact</CustomLink>
           </motion.div>
         </div>
 
@@ -77,14 +77,14 @@ const Navbar = () => {
                   className="menu"
                   animate={{ rotate: 0.1 }}
                 >
-                  <Link to="/portfolio" onClick={handleLogoClick}>
-                    Sajmon.
+                  <Link className="nav-text" to="/portfolio" onClick={handleLogoClick}>
+                    Sajmon
                   </Link>
                 </motion.div>
               </li>
               <li>
                 <motion.div
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.5 }}
                   whileTap={{ rotate: 15, scale: 1.5 }}
                   className="menu resp"
                   animate={{ rotate: 0.1 }}
@@ -102,7 +102,7 @@ const Navbar = () => {
                   className="menu resp"
                   animate={{ rotate: 0.1 }}
                 >
-                  <Link to="/portfolio" onClick={handleShowNavbar}>
+                  <Link className="nav-text" to="/portfolio" onClick={handleShowNavbar}>
                     Home
                   </Link>
                 </motion.div>
@@ -114,7 +114,7 @@ const Navbar = () => {
                   className="menu resp"
                   animate={{ rotate: 0.1 }}
                 >
-                  <CustomLink to="/aboutme" onClick={handleShowNavbar}>
+                  <CustomLink className="nav-text" to="/aboutme" onClick={handleShowNavbar}>
                     About Me
                   </CustomLink>
                 </motion.div>
@@ -126,7 +126,7 @@ const Navbar = () => {
                   className="menu resp"
                   animate={{ rotate: 0.1 }}
                 >
-                  <CustomLink to="/contact" onClick={handleShowNavbar}>
+                  <CustomLink className="nav-text" to="/contact" onClick={handleShowNavbar}>
                     Contact
                   </CustomLink>
                 </motion.div>

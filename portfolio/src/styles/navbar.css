@@ -8,6 +8,9 @@
   display: flex;
   justify-content: space-between;
 }
+.nav-text:hover{
+  color:#c985ed;
+}
 .content {
   margin: 0px 20% 0px 80px;
 

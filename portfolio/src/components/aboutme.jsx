@@ -28,6 +28,7 @@ const AboutMe = () => {
             />
           </div>
         </motion.div>
+        <div className="text-and-button">
         <motion.div
           whileHover={{ scale: 1 }}
           whileTap={{ rotate: 10, scale: 1.1 }}
@@ -66,6 +67,7 @@ const AboutMe = () => {
               </p>
             </div>
           </div>
+          </motion.div>
           <motion.div
           whileHover={{ scale: 1.2 }}
           whileTap={{ rotate: 10, scale: 1.1 }}
@@ -77,8 +79,10 @@ const AboutMe = () => {
             Open CV
         </button>
         </div>
-        </motion.div>
+        
+        
       </motion.div>
+      </div>
       </div>
     </div>
   );

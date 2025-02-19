@@ -24,7 +24,8 @@ hr {
   margin-top: 20px;
 }
 .pdfbutton{
-  margin-top: 2px;
+  margin-top: 7px;
+  margin-left: 50px;
   color: black;
   background-color: #c985ed;
   border-style: none;
@@ -52,6 +53,9 @@ button:hover {
   .title {
     font-size: 25px;
     margin-top: 0px;
+  }
+  .pdfbutton{
+    margin-left: 0px !important;
   }
 }
 @media screen and (max-width: 750px) {

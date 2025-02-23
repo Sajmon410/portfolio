@@ -1,2 +1,2 @@
-# My Personal Portfolio (using ReactJS):
+# My Personal Portfolio built in ReactJS:
 https://sajmon410.github.io/portfolio/

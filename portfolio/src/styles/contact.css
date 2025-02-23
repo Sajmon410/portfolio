@@ -22,8 +22,11 @@
 }
 .socials p {
   margin-left: 5px;
-  color:#c985ed;
+  color: white;
   cursor: pointer !important;
+}
+.socials p:hover{
+  color:#c985ed;
 }
 @media screen and (max-width: 550px) {
   .socials {

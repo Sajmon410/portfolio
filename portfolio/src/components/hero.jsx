@@ -18,7 +18,7 @@ const texts = [
   `My Social Network in VanillaJS. (click to view)`,
   "I was engaged on a project featuring E-commerce web application.",
   "Shopping List, Android Application in Java.",
-  "Organizer, My First Flutter App for Task Management.",
+  "Simon Says, My First Flutter App for Task Management.",
   "Landing page for Bookkeeping Agency.",
   "Sajmon's Slime, my first game in C#  back in 2019.",
 ];
@@ -27,7 +27,7 @@ const hrefs = [
   "https://sajmon410.github.io",
   "https://jewelryshopdoro.com/ ",
   "https://github.com/Sajmon410/ShoppingList",
-  "https://github.com/Sajmon410/organizer",
+  "https://github.com/Sajmon410/simon-says",
   null,
   "https://github.com/Sajmon410/Sajmon-s-slime",
 ];

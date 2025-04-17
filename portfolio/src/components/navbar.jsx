@@ -84,6 +84,7 @@ const Navbar = () => {
                   whileTap={{ rotate: 15, scale: 1.5 }}
                   className="menu"
                   animate={{ rotate: 0.1 }}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Link className="nav-text" to="/portfolio" onClick={handleLogoClick}>
                     Sajmon
@@ -96,6 +97,7 @@ const Navbar = () => {
                   whileTap={{ rotate: 15, scale: 1.5 }}
                   className="menu resp"
                   animate={{ rotate: 0.1 }}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <IoClose
                     onClick={handleShowNavbar}
@@ -109,6 +111,7 @@ const Navbar = () => {
                   whileTap={{ rotate: 15, scale: 1.5 }}
                   className="menu resp"
                   animate={{ rotate: 0.1 }}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Link className="nav-text" to="/portfolio" onClick={handleShowNavbar}>
                     Home
@@ -121,6 +124,7 @@ const Navbar = () => {
                   whileTap={{ rotate: 15, scale: 1.5 }}
                   className="menu resp"
                   animate={{ rotate: 0.1 }}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <CustomLink className="nav-text" to="/aboutme" onClick={handleShowNavbar}>
                     About Me
@@ -133,6 +137,7 @@ const Navbar = () => {
                   whileTap={{ rotate: 15, scale: 1.5 }}
                   className="menu resp"
                   animate={{ rotate: 0.1 }}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <CustomLink className="nav-text" to="/contact" onClick={handleShowNavbar}>
                     Contact

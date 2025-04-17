@@ -6,12 +6,19 @@ import { IoMenu, IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = React.useState(false);
+  const [isClosing, setIsClosing] = React.useState(false);
   const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar);
+    if (showNavbar) {
+      setIsClosing(true);
+      setTimeout(() => {
+        setShowNavbar(false);
+        setIsClosing(false);
+      }, 650);
+    } else {
+      setShowNavbar(true);
+    }
   };
-
   const handleLogoClick = (e) => {
-    // Proveri da li je trenutni URL `/portfolio` i osveži stranicu
     if (window.location.pathname === "/portfolio") {
       e.preventDefault();
       window.location.href = "/portfolio";
@@ -63,10 +70,11 @@ const Navbar = () => {
         <IoMenu onClick={handleShowNavbar} className="menu-icon" />
       </>
 
-      {showNavbar && (
+      {(showNavbar || isClosing) && (
         <div
           id="nav-elements"
-          className="animate__animated animate__fadeInRight"
+          className={`animate__animated ${isClosing ? "animate__fadeOutRight":"animate__fadeInRight"} `}
+          onClick={handleShowNavbar}
         >
           <div className="elements">
             <ul>
@@ -147,9 +155,7 @@ function CustomLink({ to, children, ...props }) {
 
   const handleClick = (e) => {
     if (isActive) {
-      // Ako je trenutna stranica ista kao cilj, osveži stranicu
       e.preventDefault();
-      window.location.reload();
     }
   };
 

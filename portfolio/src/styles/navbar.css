@@ -52,6 +52,7 @@ li {
   width: 20px;
   height: 20px;
   margin-right: 20px;
+  cursor: pointer;
 }
 .menu-icon-phone{
   cursor: pointer;

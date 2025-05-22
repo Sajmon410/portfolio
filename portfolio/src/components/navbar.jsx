@@ -47,7 +47,7 @@ const Navbar = () => {
             className="menu"
             animate={{ rotate: 0.1 }}
           >
-            <CustomLink className="nav-text" to="/portfolio">Home</CustomLink>
+            <CustomLink className="nav-text" to="/portfolio">Projects</CustomLink>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -114,7 +114,7 @@ const Navbar = () => {
                   onClick={(e) => e.stopPropagation()}
                 >
                   <Link className="nav-text" to="/portfolio" onClick={handleShowNavbar}>
-                    Home
+                    Projects
                   </Link>
                 </motion.div>
               </li>

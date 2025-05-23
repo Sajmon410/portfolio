@@ -96,7 +96,7 @@ const Hero = () => {
           className="centar"
           onClick={hasClicked ? null : handleDivClick}
           animate={{ rotate: 0.1 }}
-        >
+        >  
           <div className="animate__animated animate__jackInTheBox space">
             <div className="app-container"></div>
             {!hasClicked && (
@@ -123,6 +123,7 @@ const Hero = () => {
             alt="Image1"
             className={imageClass} 
           />
+          
         </div>
 
         {showNewImage && (

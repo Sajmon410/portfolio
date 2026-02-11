@@ -58,7 +58,7 @@ const Hero = () => {
     let timer;
     if (isClicked) {
       timer = setTimeout(() => {
-        setImageClass("animate__animated animate__hinge image1"); 
+        setImageClass("animate__animated animate__zoomOutDown image1"); 
       }, 1500);
     }
 

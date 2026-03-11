@@ -41,32 +41,32 @@ const AboutMe = () => {
           >
             <div className="animate__animated animate__backInRight">
               <h1 className="title">About Me</h1>
-              <p className="about-me-text">
-                I hold a Bachelor's degree in{" "}
-                <span style={{ color: "#c985ed" }}>
-                  Electrical and Computer Engineering
-                </span>{" "}
-                specialized in computer technologies and communications.
-              </p>
+            <p className="about-me-text">
+            I hold a Bachelor's degree in{" "}
+            <span style={{ color: "#c985ed" }}>
+              Electrical and Computer Engineering
+            </span>{" "}
+            with a strong focus on embedded systems and low-level programming.
+          </p>
 
-              <div className="animate__animated animate__jackInTheBox animate__delay-1s">
-                <p className="about-me-text">
-                  Passionate about software development, I build{" "}
-                  <span style={{ color: "#c985ed" }}>
-                    Modern Web and Mobile Applications.
-                  </span>
-                </p>
-              </div>
+          <div className="animate__animated animate__jackInTheBox animate__delay-1s">
+            <p className="about-me-text">
+              Passionate about bridging the gap between hardware and software, I develop{" "}
+              <span style={{ color: "#c985ed" }}>
+                Robust Embedded Firmware and Real-Time Systems.
+              </span>
+            </p>
+          </div>
 
-              <div className="animate__animated animate__backInUp animate__delay-2s">
-                <p className="about-me-text">
-                  With a{" "}
-                  <span style={{ color: "#c985ed" }}>
-                    strong technical foundation and hands-on project experience,
-                  </span>{" "}
-                  I aim to contribute to innovative, scalable solutions in real-world environments.
-                </p>
-              </div>
+          <div className="animate__animated animate__backInUp animate__delay-2s">
+            <p className="about-me-text">
+              With experience in{" "}
+              <span style={{ color: "#c985ed" }}>
+                C/C++, Linux Kernel drivers, and System Optimization,
+              </span>{" "}
+              I aim to build efficient, scalable solutions for the next generation of IoT devices.
+            </p>
+          </div>
             </div>
           </motion.div>
 

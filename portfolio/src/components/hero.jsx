@@ -3,29 +3,48 @@ import { motion } from "framer-motion";
 import "./../styles/hero.css";
 import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
-import img0 from "../img/photo0.png";
-import img1 from "../img/photo1.PNG";
-import img2 from "../img/photo2.PNG";
-import img3 from "../img/photo3.png";
-import img4 from "../img/photo4.png";
-import img5 from "../img/photo5.PNG";
-import img6 from "../img/photo6.png";
+import esp32 from "../img/slika4.png";
+import roboticarm from "../img/slika1.png";
+import aadsp from "../img/slika2.png";
+import powermeter from "../img/slika3.png";
+import sajmonet from "../img/photo1.PNG";
+import doro from "../img/photo2.PNG";
+import androidshopping from "../img/photo3.png";
+import slime from "../img/photo4.png";
+import insolvent from "../img/photo5.PNG";
+import sajmonsays from "../img/photo6.png";
 import arrow from "../img/arrow.png";
 
-const images = [img0, img1, img2, img3, img6, img5, img4];
+const images = [
+  esp32, 
+  roboticarm, 
+  aadsp, 
+  powermeter, 
+  doro, 
+  sajmonet, 
+  androidshopping,
+  sajmonsays,
+  insolvent,
+  slime];
 const texts = [
-  "Flutter App for Live ESP32 Streaming, Photo Capture, and Location Mapping.",
-  `My Social Network in VanillaJS. (click to view)`,
-  "I was engaged on a project featuring E-commerce web application.",
-  "Shopping List, Android Application in Java.",
-  "Simon Says, My First Flutter App for Task Management.",
-  "Landing page for Bookkeeping Agency.",
-  "Sajmon's Slime, my first game in C#  back in 2019.",
+  "Flutter App for Live ESP32 Streaming, Photo Capture, and Location Mapping.", //0
+  "Remote Robotic Arm Control System with Custom Linex Driver.",
+  "DSP Channel Combining Models with Fixed-Point Optimization.",
+  "Power Meter Data Logger with RTC and SD Storage.",
+  "I was engaged on a project featuring E-commerce web application.",//2
+  `My Full-Stack Social Network in VanillaJS.`, //1 
+  "Shopping List, Android Application in Java.", //3
+  "Simon Says, My First Flutter App for Task Management.",  //4
+  "Landing page for Bookkeeping Agency.", //  5z
+  "Sajmon's Slime, my first game in C#  back in 2019.", //6
 ];
 const hrefs = [
   "https://github.com/Sajmon410/flutter-esp32",
+  "https://github.com/Sajmon410/Remote-Robot-Arm-Control",
+  "https://github.com/Sajmon410/AADSP",
+  "https://github.com/Sajmon410/AutonomtforPowerMeter",
+    "https://jewelryshopdoro.com/ ",
   "https://sajmon410.github.io",
-  "https://jewelryshopdoro.com/ ",
   "https://github.com/Sajmon410/ShoppingList",
   "https://github.com/Sajmon410/simon-says",
   null,
